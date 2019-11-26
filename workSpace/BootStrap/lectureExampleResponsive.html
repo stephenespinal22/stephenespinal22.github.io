@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+    /* bootstrap defines XS devices (phones) to be the default
+     setting at less than 768 pixels width */
+    @media (max-width:767px) {
+      body {
+        background-color: pink;
+      }
+    }
+
+    /* bootstrap defines large devices to be greater than or
+     equal to 1200 pixels wide */
+    @media (min-width:1200px) {
+      body {
+        background-color: black;
+      }
+    }
+
+    .color1 {
+      background-color: #ff0329;
+      padding: 20px;
+    }
+
+    .color2 {
+      background-color: #03e0a1;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <h1>Bootstrap Tutorial</h1>
+
+    <div class="container-fluid">
+      <h5>ROW 1 (Responsive)</h5>
+      <div class="row">
+        <div class="col-6 col-md-2 color1">COL 1</div>
+        <div class="col-6 col-md-2 color2">COL 2</div>
+        <div class="col-6 col-md-2 color1">COL 3</div>
+        <div class="col-6 col-md-2 color2">COL 4</div>
+        <div class="col-6 col-md-2 color1">COL 5</div>
+        <div class="col-6 col-md-2 color2">COL 6</div>
+
+      </div>
+    </div>
+    <br>
+
+    <div class="container-fluid">
+      <h5>ROW 2</h5>
+      <div class="row">
+        <div class="col color2">COL 1</div>
+        <div class="col color1">COL 2</div>
+        <div class="col color2">COL 3</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

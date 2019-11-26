@@ -1,0 +1,101 @@
+/*
+Creator: Stephen Espinal
+Date created: 4/9/2019
+Date last modified:
+*/
+
+
+body {
+  background-color: #fef9ff;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: indigo;
+}
+
+#headerJumbo {
+  background-color: #243157;
+  color: #fef9ff;
+  padding-bottom: 0px;
+  height: 70px;
+}
+
+#landingBackground
+{
+  background-color: black;
+background-image: url("landingPageImages/blur.jpg");
+background-repeat: repeat-y;
+background-size: cover;
+}
+
+.jumbotron
+{
+  padding:0px;
+  padding-bottom: 0px;
+}
+
+#header1 {
+  font-size: 250%;
+  font-style: italic;
+  display: inline;
+  padding: 20px;
+}
+
+footer{
+  background-color: #2A2E51;
+  color: #fef9ff;
+  height: 150px;
+  padding: 30px;
+}
+
+
+nav {
+  color: #fef9ff;
+  font-size: 100%;
+  padding-top: 10px;
+}
+
+nav a {
+  color: #fef9ff;
+}
+
+
+nav a:hover {
+  color: #5b7d87;
+}
+
+nav a:active {
+  font-weight: bold;
+}
+
+#hamburger{
+  display:none;
+}
+
+
+@media (max-width:572px) {
+
+  #navbar{
+    display:none;
+  }
+
+  #hamburger{
+  display: inline-block;
+  position:fixed;
+  left: 80%;
+  }
+
+  #headerJumbo {
+    background-color: #2A2E51;
+    color: #fef9ff;
+    padding-bottom: 0px;
+    height: 200px;
+  }
+
+  #header1 {
+    margin-top: 100px;
+    font-size: 250%;
+    font-style: italic;
+    display: inline;
+  }
+
+
+}

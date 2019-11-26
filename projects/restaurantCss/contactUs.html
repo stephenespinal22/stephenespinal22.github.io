@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+    Name: Stephen Espinal
+    Date Created: 4/5/19
+    Most recent revision: 4/5/19
+-->
+<html lang="en">
+
+<head>
+  <title>Menu - Papas Empanadas</title>
+  <!--BootStrap CDN-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- end boot strap -->
+
+  <link rel="stylesheet" href="restaurantStyles/style.css">
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1 style="text-align: center">Papas Empanadas</h1>
+
+    <nav>
+      <a href="index.html">Home</a> &nbsp;
+      <a href="menu.html">Menu</a> &nbsp;
+      <a href="contactUs.html">Contact Us</a> <br> <br>
+    </nav>
+    <br><br>
+  </header>
+
+  <section style="text-align: center">
+    <form action="fake.html" method="post">
+      <br><br>
+      <label for="Name">Name:</label>
+      <input type="text" name="Name" value=""> <br>
+
+      <label for="Email">Email:</label>
+      <input type="text" name="Email" value=""> <br>
+
+      <label for="Phone">Phone:</label>
+      <input type="text" name="Phone" value=""> <br>
+
+      <label for="Reason">Reason for Inquiry:</label>
+      <select name="Reason">
+        <option value="Catering">Catering</option>
+        <option value="Private Party">Private Party</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Other">Other</option>
+      </select> <br>
+
+      <label for="AdditionalInformation">Additional Information:</label> <br>
+      <textarea name="information"></textarea> <br>
+
+      <label for="BeenHere?">Have you been to the restaurant?</label>
+      <input type= "radio" name="answer" value="YES" checked>Yes
+      <input type= "radio" name="answer" value="NO"> No <br>
+
+      <label for="BestDays">Best days to contact you:</label>
+      <input type="checkbox" name="answer" value=""> M
+      <input type="checkbox" name="answer" value=""> T
+      <input type="checkbox" name="answer" value=""> W
+      <input type="checkbox" name="answer" value=""> Th
+      <input type="checkbox" name="answer" value="">  F <br>
+
+      <label for="submit"></label>
+      <input type="submit" name="submit" value="Send Request">
+
+    </form>
+
+  </section>
+
+
+</body>
+
+
+<footer style="text-align: center">
+  <hr>
+  <p>22 Sickle St, Merrick, NY, 11510</p>
+  <p>516-599-2545</p>
+</footer>
+
+</html>

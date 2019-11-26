@@ -1,0 +1,21 @@
+/*
+Creator: Stephen Espinal
+Date created: 4/9/2019
+Date last modified:
+*/
+
+body {
+  background: white;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Helvetica neue, roboto;
+}
+
+h1 {
+  color: #bdbdbd;
+  font-weight: 300;
+}

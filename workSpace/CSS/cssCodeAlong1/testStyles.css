@@ -1,0 +1,22 @@
+body {
+  background-color: lightblue;
+}
+
+header, footer{
+  background-color: indianred;
+  color: white;
+}
+.border{
+  border: thick solid blue;
+}
+#experiences{
+  border: thin dotted orange;
+}
+#about{
+     width: 500px;
+     height: 125px;
+     padding: 10px;
+     border: 2px dashed white;
+     margin-left: 50px;
+     margin: 50px;
+}

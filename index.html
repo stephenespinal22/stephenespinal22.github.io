@@ -1,0 +1,90 @@
+<!--
+Name: Stephen Espinal
+Date Created: 4/4/2019
+Most recent revision: 4/4/2019
+
+example of inline elements
+<p>This is a paragraph. <strong>This sentence is bold with one word in <em>italics</em>.</strong></p>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Stephen's Portfolio</title>
+  <!--BootStrap CDN-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <!-- end boot strap -->
+
+  <link rel="stylesheet" href="landingPage.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+
+<body id = "landingBackground">
+
+  <header class="jumbotron fixed-top" id="headerJumbo">
+    <!-- Navigation inside jumbotron -->
+          <h1 id="header1">Stephen Espinal</h1>
+    <nav id = "navbar">
+      <!-- navbar for desktop -->
+      <ul class="nav justify-content-end fixed-top">
+        <li class="nav-item">
+          <a class="nav-link" href="projects/projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutMe/aboutMe.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://stephenespinal.home.blog/">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/stephenespinal22">GitHub</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- hamburger menu for phone -->
+    <nav class="navbar-dark nav justify-content-end fixed-top" id = "hamburger">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ">
+        <li class="nav-item active">
+          <a class="nav-link" href="projects/projects.html">Projects<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutMe/aboutMe.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://stephenespinal.home.blog/">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://github.com/stephenespinal22">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  </header>
+
+
+
+  <footer class="fixed-bottom text-center">
+    <p>&copy; 2019 Stephen Espinal. All rights reserved</p>
+  </footer>
+  <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+body{
+background-image: url("../images/empanada.jpg");
+background-size: 250px;
+back
+background-repeat: repeat;
+
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 150%;
+  color: #fef9ff;
+
+}
+
+nav{
+  margin-top: 20px;
+  text-align: center;
+}
+
+a{
+  color: #fef9ff;
+
+}
+
+#indexInfo{
+  margin:10%;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #996633;
+}
+
+header{
+  background-color: #d6ad3b;
+  color: #fef9ff;
+  height: 100px;
+  padding: 30px;
+}
+
+footer{
+  background-color: #d6ad3b;
+  color: #fef9ff;
+  height: 100px;
+}
+
+table{
+  background-color: #996633;
+  text-align: center;
+  width: 90%;
+}
+
+th{
+  font-size: 200%
+}
+
+td
+{
+  text-align: center;
+}

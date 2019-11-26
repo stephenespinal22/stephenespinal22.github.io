@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/JavaScript" src="displayEvens.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    .form-group {
+      display: block !important;
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+    }
+
+    .form-control {
+      display: block !important;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Display Evens</h1>
+
+
+    <form name="evens" onsubmit="return displayResult();" class="form-inline">
+
+      <div class="form-group">
+
+        <label for="num1">Starting Number: </label>
+        <!-- we use number type here so you are limited to
+                to only entering numbers -->
+        <input type="number" class="form-control" id="num1">
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="num2">Ending Number: </label>
+        <input type="number" class="form-control" id="num2">
+
+      </div>
+      <div class="form-group">
+
+        <label for="num3">Step: </label>
+        <input type="number" class="form-control" id="num3">
+
+      </div>
+
+      <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
+    </form>
+
+    <div id="answer" style="display:none;">
+      <p id="result"></p>
+    </div>
+
+  </div>
+</body>
+
+</html>

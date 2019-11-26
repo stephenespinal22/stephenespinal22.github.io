@@ -1,0 +1,53 @@
+body {
+  background-color: #BC8D8E;
+}
+
+button {
+  font-size:20px;
+  padding:10px;
+  text-transform:uppercase;
+  margin-right:6px;
+}
+
+#heading{
+  font-family: 'Dokdo', cursive;
+  text-align: center;
+}
+
+img{
+
+  width: 23%;
+  border: solid black;
+}
+
+.images
+{
+  width: 90%;
+  margin: auto;
+  display:inline
+}
+
+#allImages
+{
+  display:none;
+}
+
+h1{
+  display: block;
+}
+
+#youWin
+{
+  width:400px;
+  display:none;
+}
+
+#loser
+{
+  width:200px;
+  display:none;
+}
+
+#answer {
+  border-color: none;
+}
