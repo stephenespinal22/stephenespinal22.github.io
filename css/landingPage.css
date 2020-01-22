@@ -1,101 +1,550 @@
-/*
-Creator: Stephen Espinal
-Date created: 4/9/2019
-Date last modified:
-*/
-
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color: #fef9ff;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: indigo;
+  padding: 0px;
+  font-family: 'Helvetica Neue';
 }
 
-#headerJumbo {
-  background-color: #243157;
-  color: #fef9ff;
-  padding-bottom: 0px;
-  height: 70px;
+.carousel-caption {
+  color: #0bceaf!important;
 }
 
-#landingBackground
-{
-  background-color: black;
-background-image: url("landingPageImages/blur.jpg");
-background-repeat: repeat-y;
-background-size: cover;
+.profilepic img {
+  height: 400px;
+  width: 400px;
+  border: 20px solid rgba(0, 0, 0, 0.07);
+  margin: 0 auto;
+  border-radius: 50%;
 }
 
-.jumbotron
-{
-  padding:0px;
-  padding-bottom: 0px;
+.intro {
+  background: #333;
+  background-size: cover;
+  color: white;
+  height: 0px;
+  overflow: hidden;
+  border: none;
 }
 
-#header1 {
-  font-size: 250%;
-  font-style: italic;
-  display: inline;
-  padding: 20px;
+.display {
+  height: auto;
+  overflow: visible;
 }
 
-footer{
-  background-color: #2A2E51;
-  color: #fef9ff;
-  height: 150px;
-  padding: 30px;
-}
-
-
-nav {
-  color: #fef9ff;
-  font-size: 100%;
+.new-section {
+  background: #333;
+  height: auto;
+  color: white;
+  display: flex;
   padding-top: 10px;
+  padding-bottom: 10PX;
+  border-top: 10px solid silver;
+  border-bottom: 10px solid silver;
+  transition: 2s;
 }
 
-nav a {
-  color: #fef9ff;
+.afterAm {
+  display: flex;
 }
 
-
-nav a:hover {
-  color: #5b7d87;
+.img-border {
+  margin: 0 auto;
+  width: 100px;
+  float: none;
+  text-align: center;
+  border: 15px solid rgba(0, 0, 0, 0.17);
+  border-radius: 100%;
 }
 
-nav a:active {
-  font-weight: bold;
-}
-
-#hamburger{
-  display:none;
-}
-
-
-@media (max-width:572px) {
-
-  #navbar{
-    display:none;
-  }
-
-  #hamburger{
+.links {
+  color: grey;
   display: inline-block;
-  position:fixed;
-  left: 80%;
+  margin-right: 10px;
+  border-radius: 3px;
+  padding: 4px 14px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.links:hover {
+  color: #0bceaf;
+  background: black;
+  transition: .7s;
+}
+
+ul li {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+ul li a {
+  text-decoration: none !important;
+  cursor: pointer;
+  padding: 0px;
+  background-color: transparent;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: #000;
+  opacity: 0.9;
+}
+
+li:hover .fa {
+  color: #0bceaf;
+}
+
+.link:hover {
+  color: #0bceaf;
+}
+
+.skills {
+  border-width: 1px;
+  border-style: solid;
+  /* border-color:   #0bceaf; */
+  border-color: silver;
+  color: silver;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 2px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.myFont h2 {
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  line-height: 65px;
+  margin-bottom: 10px;
+}
+
+.myFont h4 {
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+.indent {
+  padding-left: 10%;
+}
+
+.downloadbtn {
+  background: black;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+  width: 140px;
+  padding: 4px;
+  margin-top: 10px;
+  display: block;
+  float: center;
+}
+
+.screenshotsbtn {
+  width: 150px;
+  height: 44px;
+  margin-top: 50px;
+  border-radius: 8px;
+  border: 2px solid #0bceaf;
+  font-family: Avenir-Heavy;
+  font-size: 15px;
+  color: black;
+  background-color: transparent;
+  background-image: initial;
+  text-shadow: initial;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.screenshotsbtn:hover {
+  background: #0bceaf;
+  color: white;
+}
+
+.downloadbtn p {
+  margin: 0px;
+}
+
+.downloadbtn:hover {
+  color: white;
+  text-decoration: none;
+  background: #4f4f4f;
+}
+
+.tag {
+  background: #0bceaf;
+  color: white;
+  padding: 0px;
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+  width: 80px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.tag p {
+  margin: 4px;
+}
+
+/* HEADER */
+
+.header {
+  height: 54px;
+  max-width: 100%;
+  background: white;
+  margin-bottom: 60px;
+}
+
+.header nav {
+  margin-top: 20px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Helvetica';
+}
+
+.header nav ul {
+  display: inline-block;
+}
+
+.header nav li {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.header nav li a {
+  color: black;
+  font-size: 18px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "roboto", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.header nav li a:hover {
+  text-decoration: underline;
+  color: #0bceaf;
+}
+
+.header nav li a:active {
+  color: green;
+}
+
+#current {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+/* SIDE BAR */
+
+.sidenav {
+  /* background-color: #1f5161; */
+  background: #1C1D25;
+  height: 100%;
+  width: 0px;
+  transition: 0.4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+  transition: 0.4s;
+}
+
+/* SIDE NAV ACCORDIAN */
+
+.sideNav-close {
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.sideNav-container {
+  height: auto;
+  background-color: transparent;
+  margin-top: 200px;
+  background: #1C1D25;
+}
+
+.sideNavButton {
+  background: #1C1D25;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  color: rgb(201, 201, 201);
+  overflow: hidden;
+  height: 43px;
+  padding-left: 12px;
+  padding-right: 32px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  box-sizing: border-box;
+  font-weight: bolder;
+  font-size: larger;
+  padding-left: 40px;
+}
+
+#navHomeLink{
+  margin-bottom: 20px;
+}
+
+
+.sideNavButton a {
+  text-decoration: none;
+}
+
+.optionLinks {
+  width: 100%;
+  background: #1C1D25;
+  color: rgb(201, 201, 201);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  transition: 0.2s;
+  font-family: 'Open Sans', serif;
+  margin-bottom: 20px;
+}
+
+.sideNavButton i {
+  border: solid rgb(201, 201, 201);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+  float: right;
+  
+}
+
+.optionLinks a {
+  background-color: transparent;
+  height: 38px;
+  display: block;
+  width: 100%;
+  color: rgb(201, 201, 201);
+  font-size: large;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 14px;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+
+.optionLinks a:hover {
+  text-decoration: underline;
+}
+
+.less {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transition: 0.2s;
+}
+
+.more {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: 0.2s;
+}
+
+.mini {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .mini {
+    display: block;
   }
+}
 
-  #headerJumbo {
-    background-color: #2A2E51;
-    color: #fef9ff;
-    padding-bottom: 0px;
-    height: 200px;
+.minilogo {
+  margin-top: 5px;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+  float: right;
+}
+
+.medilinks {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.medilinks:hover {
+  opacity: 1;
+}
+
+/* Hambrger nav */
+
+.hamcontainer {
+  box-sizing: border-box;
+  padding: 6px 10px 0 10px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.ham {
+  width: 30px;
+  height: 5px;
+  background-color: whitesmoke;
+  margin-top: 5px;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+/* for animation */
+
+.firstHam {
+  height: 5px;
+  width: 30px;
+  margin-top: 15px;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  transform: rotate(45deg);
+  transition: 0.4s;
+}
+
+.lastHam {
+  width: 30px;
+  height: 5px;
+  margin-top: -15px;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  transform: rotate(-45deg);
+  transition: 0.4s;
+}
+
+.returnHam {
+  width: 30px;
+  height: 5px;
+  margin: 5px 0;
+  background-color: white;
+  transform: rotate(0deg);
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+. .footer a:hover {
+  text-decoration: underline;
+}
+
+.footer nav ul li {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: inline-block;
+  line-height: normal;
+}
+
+.footerlink_container {
+  height: 60px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+  text-align: center;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+.footerlink_container ul {
+  display: inline-block;
+  list-style: none;
+}
+
+.footerlink_container li {
+  display: inline-block;
+}
+
+.socialmedia {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+/* media query for phone */
+
+@media screen and (max-width: 940px) {
+  .header {
+    height: 50px;
+    background-color: transparent;
   }
-
-  #header1 {
-    margin-top: 100px;
-    font-size: 250%;
-    font-style: italic;
-    display: inline;
+  .header nav {
+    display: none;
   }
-
-
+  .banner {
+    top: 50px;
+  }
+  .net {
+    top: 50px;
+  }
+  .hamcontainer {
+    display: block;
+  }
+  .sidenav {
+    display: block;
+  }
+  .mini {
+    display: inline-block;
+  }
+  .indent {
+    padding-left: 30px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .myFont h2 {
+    line-height: 35px;
+  }
 }
