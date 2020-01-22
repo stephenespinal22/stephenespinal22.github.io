@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-
-
     var nav = document.getElementById("side");
     if (nav.style.width === '250px') {
       nav.style.width = '0px';
