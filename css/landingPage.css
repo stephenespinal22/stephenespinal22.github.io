@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -10,28 +11,6 @@ body {
 
 .carousel-caption {
   color: #0bceaf!important;
-}
-
-.profilepic img {
-  height: 400px;
-  width: 400px;
-  border: 20px solid rgba(0, 0, 0, 0.07);
-  margin: 0 auto;
-  border-radius: 50%;
-}
-
-.intro {
-  background: #333;
-  background-size: cover;
-  color: white;
-  height: 0px;
-  overflow: hidden;
-  border: none;
-}
-
-.display {
-  height: auto;
-  overflow: visible;
 }
 
 .new-section {
@@ -46,21 +25,8 @@ body {
   transition: 2s;
 }
 
-.afterAm {
-  display: flex;
-}
-
-.img-border {
-  margin: 0 auto;
-  width: 100px;
-  float: none;
-  text-align: center;
-  border: 15px solid rgba(0, 0, 0, 0.17);
-  border-radius: 100%;
-}
-
 .links {
-  color: grey;
+  color: whitesmoke;
   display: inline-block;
   margin-right: 10px;
   border-radius: 3px;
@@ -103,39 +69,43 @@ li:hover .fa {
   color: #0bceaf;
 }
 
-.skills {
-  border-width: 1px;
-  border-style: solid;
-  /* border-color:   #0bceaf; */
-  border-color: silver;
-  color: silver;
-  border-radius: 4px;
-  display: inline-block;
-  padding: 2px;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
 .myFont h2 {
   font-family: "roboto", sans-serif;
   font-weight: 600;
   line-height: 65px;
   margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.myFont li {
+  color: whitesmoke;
 }
 
 .myFont h4 {
   font-weight: bold;
   font-family: "roboto", sans-serif;
-  margin-bottom: 20px;
+  color: whitesmoke;
 }
 
 .indent {
   padding-left: 10%;
+  margin-top: 200px;
+}
+
+.back-ground{
+  background-color: #AF213B6B;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#domain{
+  font-size: 15px;
+  color: whitesmoke;
 }
 
 .downloadbtn {
-  background: black;
-  color: white;
+  background: whitesmoke;
+  color: black;
   text-align: center;
   border-radius: 2px;
   box-sizing: border-box;
@@ -191,28 +161,23 @@ li:hover .fa {
   background: #4f4f4f;
 }
 
-.tag {
-  background: #0bceaf;
-  color: white;
-  padding: 0px;
-  box-sizing: border-box;
-  height: auto;
-  width: auto;
-  width: 80px;
-  text-align: center;
-  border-radius: 50px;
+
+/* header */
+#top {
+  background-image: url(../landingPageImages/background.jpg);
+  background-color: rgb(28,29,37);
+  overflow: hidden;
+  transition: all .3s ease;
+  height: 100vh;
 }
 
-.tag p {
-  margin: 4px;
+.navLinks {
+  color: #B0B2C3;
 }
-
-/* HEADER */
 
 .header {
   height: 54px;
   max-width: 100%;
-  background: white;
   margin-bottom: 60px;
 }
 
@@ -220,7 +185,7 @@ li:hover .fa {
   margin-top: 20px;
   width: 100%;
   display: inline-block;
-  text-align: center;
+  text-align: right;
   box-sizing: border-box;
   overflow: hidden;
   font-family: 'Helvetica';
@@ -228,6 +193,7 @@ li:hover .fa {
 
 .header nav ul {
   display: inline-block;
+  margin-right: 10%;
 }
 
 .header nav li {
@@ -236,7 +202,7 @@ li:hover .fa {
 }
 
 .header nav li a {
-  color: black;
+  color: whitesmoke;
   font-size: 18px;
   display: inline-block;
   text-decoration: none;
@@ -246,16 +212,11 @@ li:hover .fa {
 
 .header nav li a:hover {
   text-decoration: underline;
-  color: #0bceaf;
+  color: whitesmoke;
 }
 
 .header nav li a:active {
-  color: green;
-}
-
-#current {
-  font-weight: bold;
-  border-bottom: 1px solid black;
+  color: whitesmoke;
 }
 
 /* SIDE BAR */
@@ -318,10 +279,9 @@ li:hover .fa {
   padding-left: 40px;
 }
 
-#navHomeLink{
+#navHomeLink {
   margin-bottom: 20px;
 }
-
 
 .sideNavButton a {
   text-decoration: none;
@@ -346,7 +306,6 @@ li:hover .fa {
   padding: 3px;
   cursor: pointer;
   float: right;
-  
 }
 
 .optionLinks a {
@@ -411,7 +370,6 @@ li:hover .fa {
 }
 
 /* Hambrger nav */
-
 .hamcontainer {
   box-sizing: border-box;
   padding: 6px 10px 0 10px;
@@ -509,12 +467,9 @@ li:hover .fa {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
 }
 
 /* media query for phone */
-
 @media screen and (max-width: 940px) {
   .header {
     height: 50px;
