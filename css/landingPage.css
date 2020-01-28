@@ -91,7 +91,7 @@ li:hover .fa {
   .myFont h2 {
     margin-top: 50px;
     margin-bottom: 30px;
-    padding: 20 20 20 0 px;
+    padding: 20px 20px 20px 0px;
     font-size: 75px;
     overflow: hidden;
   }
@@ -116,6 +116,7 @@ li:hover .fa {
   padding: 4px;
   display: block;
   float: center;
+  margin-top: 20px;
 }
 
 .downloadbtn p {
@@ -146,44 +147,36 @@ li:hover .fa {
     font-weight: bold;
 }
 
-.blog-site {
+.project{
   max-width: 936px;
   margin: auto;
 }
 
-.screenshotsbtn {
-  width: 150px;
-  height: 44px;
-  margin-top: 50px;
-  border-radius: 8px;
-  border: 2px solid #0bceaf;
-  font-family: Avenir-Heavy;
-  font-size: 15px;
-  color: black;
-  background-color: transparent;
-  background-image: initial;
-  text-shadow: initial;
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 50px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.project-banner{
+  margin: 20px 5px 5px 0px;
 }
 
-.screenshotsbtn:hover {
-  background: #0bceaf;
+.d-block{
+  max-height: 700px;
+}
+
+.viewMore {
+  background: #E9ECEF;
+  color: black;
+  text-align: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 240px;
+  padding: 10px;
+  display: block;
+  float: center;
+  margin-top: 20px;
+}
+
+.viewMore:hover {
   color: white;
+  text-decoration: none;
+  background: #4f4f4f;
 }
 
 /* header */
