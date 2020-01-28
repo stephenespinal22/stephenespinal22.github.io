@@ -13,18 +13,6 @@ body {
   color: #0bceaf!important;
 }
 
-.new-section {
-  background: #333;
-  height: auto;
-  color: white;
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10PX;
-  border-top: 10px solid silver;
-  border-bottom: 10px solid silver;
-  transition: 2s;
-}
-
 .links {
   color: whitesmoke;
   display: inline-block;
@@ -75,6 +63,7 @@ li:hover .fa {
   line-height: 65px;
   margin-bottom: 10px;
   color: whitesmoke;
+  overflow: hidden;
 }
 
 .myFont li {
@@ -89,16 +78,30 @@ li:hover .fa {
 
 .indent {
   padding-left: 10%;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
-.back-ground{
+.back-ground {
   background-color: #AF213B6B;
   padding: 15px;
   border-radius: 20px;
 }
 
-#domain{
+@media screen and (min-width: 1200px) {
+  .myFont h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20 20 20 0 px;
+    font-size: 75px;
+    overflow: hidden;
+  }
+  .myFont h4 {
+    font-size: 30px;
+    overflow: hidden;
+  }
+}
+
+#domain {
   font-size: 15px;
   color: whitesmoke;
 }
@@ -111,9 +114,41 @@ li:hover .fa {
   box-sizing: border-box;
   width: 140px;
   padding: 4px;
-  margin-top: 10px;
   display: block;
   float: center;
+}
+
+.downloadbtn p {
+  margin: 0px;
+}
+
+.downloadbtn:hover {
+  color: white;
+  text-decoration: none;
+  background: #4f4f4f;
+}
+
+/* PROJECTS */
+
+#projects-heading {
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
+  opacity: 1;
+  text-align: center;
+  margin-bottom: 70px;
+  color: #4a4a4a;
+  font-size: 1.414em;
+    line-height: 1.3260254597;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.blog-site {
+  max-width: 936px;
+  margin: auto;
 }
 
 .screenshotsbtn {
@@ -151,21 +186,11 @@ li:hover .fa {
   color: white;
 }
 
-.downloadbtn p {
-  margin: 0px;
-}
-
-.downloadbtn:hover {
-  color: white;
-  text-decoration: none;
-  background: #4f4f4f;
-}
-
-
 /* header */
+
 #top {
   background-image: url(../landingPageImages/background.jpg);
-  background-color: rgb(28,29,37);
+  background-color: rgb(28, 29, 37);
   overflow: hidden;
   transition: all .3s ease;
   height: 100vh;
@@ -179,6 +204,7 @@ li:hover .fa {
   height: 54px;
   max-width: 100%;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .header nav {
@@ -212,7 +238,7 @@ li:hover .fa {
 
 .header nav li a:hover {
   text-decoration: underline;
-  color: whitesmoke;
+  color: #0bceaf;
 }
 
 .header nav li a:active {
@@ -339,24 +365,6 @@ li:hover .fa {
   transition: 0.2s;
 }
 
-.mini {
-  display: none;
-}
-
-@media screen and (max-width: 940px) {
-  .mini {
-    display: block;
-  }
-}
-
-.minilogo {
-  margin-top: 5px;
-  margin-right: 20px;
-  height: 40px;
-  width: 40px;
-  float: right;
-}
-
 .medilinks {
   display: inline-block;
   width: 48px;
@@ -370,6 +378,7 @@ li:hover .fa {
 }
 
 /* Hambrger nav */
+
 .hamcontainer {
   box-sizing: border-box;
   padding: 6px 10px 0 10px;
@@ -437,29 +446,6 @@ li:hover .fa {
   line-height: normal;
 }
 
-.footerlink_container {
-  height: 60px;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  background-color: transparent;
-  border: none;
-  overflow: hidden;
-  text-align: center;
-  padding-right: 50px;
-  box-sizing: border-box;
-}
-
-.footerlink_container ul {
-  display: inline-block;
-  list-style: none;
-}
-
-.footerlink_container li {
-  display: inline-block;
-}
-
 .socialmedia {
   background-color: transparent;
   width: 100%;
@@ -470,6 +456,7 @@ li:hover .fa {
 }
 
 /* media query for phone */
+
 @media screen and (max-width: 940px) {
   .header {
     height: 50px;

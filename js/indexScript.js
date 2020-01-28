@@ -9,6 +9,7 @@ $(document).ready(function () {
       hamburger.style.position = "absolute";
     }
 
+    $(document).on("click", "#project-info", toggleNav);
 
 });
 

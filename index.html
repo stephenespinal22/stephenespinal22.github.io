@@ -31,7 +31,7 @@ Most recent revision: 4/4/2019
         <button class="sideNavButton" onclick="accordion(0)" id="current1">PROJECTS<i class="more"
             id="dn1"></i></button>
         <div class="optionLinks" id="option1">
-          <a href="">Project Info</a>
+          <a id="project-info" href="#Projects">Project Info</a>
           <a href="https://sedev-blogsite.herokuapp.com" target="blank">BlogSite</a>
           <a href="https://sedev-supertracker.herokuapp.com" target="blank">SuperTracker</a>
         </div>
@@ -59,14 +59,12 @@ Most recent revision: 4/4/2019
     <p id="domain">stephenespinaldev.com</p>
 
     <div class="row">
-      <div class="col-12 header ">
+      <div class="col-12 header">
 
         <nav>
           <ul>
             <li><a href="https://stephenespinaldev.com">Home</a></li>
-            <li><a href="">Projects</a></li>
-            <!-- <li><a href="https://github.com/stephenespinal22" target="_blank">Github</a></li>
-            <li><a href="https://linkedin.com/in/stephen-espinal-17a825181/" target="_blank">Linkedin</a></li> -->
+            <li><a href="#Projects">Projects</a></li>
             <li><a href="documents/StephenEspinalResume.pdf" target="_blank">Resume</a></li>
           </ul>
         </nav>
@@ -77,203 +75,190 @@ Most recent revision: 4/4/2019
 
     <div class="row">
 
-      <div class="col-8 col-xl-5 indent myFont">
+      <div class="col-8 col-l-7 indent myFont">
         <div class="back-ground">
           <h2>Stephen Espinal</h2>
 
           <h4>Junior Full-Stack Software Developer</h4>
           <ul>
             <li><i class="fa fa-map-marker"></i> Long Island, NY</li>
-            <a class="links" href="https://github.com/lliguihector" target="_blank"><i class="fa fa-github"></i></a>
-            <a class="links" href="https://www.linkedin.com/in/hector-lliguichuzhca-965aaa13b" target="_blank"><i
+            <a class="links" href="https://github.com/stephenespinal22" target="_blank"><i class="fa fa-github"></i></a>
+            <a class="links" href="https://linkedin.com/in/stephen-espinal-17a825181/" target="_blank"><i
                 class="fa fa-linkedin"></i></a>
           </ul>
-
-          <a class="downloadbtn" href="documents/HectorLliguichuzhcaResume.pdf" target="_blank">
+          <a class="downloadbtn" href="documents/StephenEspinalResume.pdf" target="_blank">
             <p><i class="fa fa-file"></i> View Resume</p>
           </a>
         </div>
-      </div>
 
+      </div>
       <div class="col-12">
       </div>
     </div>
   </div>
   <!-- end of header -->
-  <div class="container-fluid">
-
-  <div class="row ">
-
-    <div class="col-12">
 
 
-      <h2>PROJECTS</h2>
-
-      <h4>Blog Website - <a href="https://hectorsblog.herokuapp.com/" target="_blank">View</a></h4>
-
-      <ul>
-
-        <li>
-          <p>Created a Full Stack dynamic Blog website following MVC design pattern.With security login features
-            for multiple users. Allows admin user to manage other contributers blog posts.
-            Users are able to add, edit delete, and create a blog post.
-
-          </p>
-        </li>
-        <li>
-          <p><i>Technologies Used: Java, Thyme Leaf, MySQL, JavaScript, TinyMCE, HTML, CSS, Bootstrap, Spring MVC,
-              Heroku, Tomcat and Spring Depenency Injection</i></p>
-        </li>
-      </ul>
-      <button class="screenshotsbtn">View Screenshots</button>
-    </div>
-
-    <div class="col-md-6">
-      <!--Carousel Wrapper-->
-      <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
-        <!--Indicators-->
-
-        <!--/.Indicators-->
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <div class="view">
-              <img class="d-block w-100" src="images/project.png" alt="First slide">
-              <div class="mask rgba-black-light"></div>
-            </div>
-            <div class="carousel-caption">
-              <h3 class="h3-responsive">Admin login</h3>
-              <p>manage all users blog posts</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view">
-              <img class="d-block w-100" src="images/project2.png" alt="Second slide">
-              <div class="mask rgba-black-light"></div>
-            </div>
-            <div class="carousel-caption">
-              <h3 class="h3-responsive">TinyMCE API</h3>
-              <p>add a new blog</p>
+  <div class="container-fluid" id="Projects">
+    <h2 id="projects-heading">Projects</h2>
+    <div class="row ">
+      <div class="col-12">
+        <section class="blog-site">
+          <!--Carousel Wrapper-->
+          <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="view">
+                  <img class="d-block w-100" src="images/project.png" alt="First slide">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">Admin login</h3>
+                  <p>manage all users blog posts</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                  <img class="d-block w-100" src="images/project2.png" alt="Second slide">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">TinyMCE API</h3>
+                  <p>add a new blog</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                  <img class="d-block w-100" src="images/project3.png" alt="Third slide">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">Feed page</h3>
+                  <p>view current blog posts</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view">
-              <img class="d-block w-100" src="images/project3.png" alt="Third slide">
-              <div class="mask rgba-black-light"></div>
+          <!--/Carousel Wrapper-->
+          <h4>Blog Website - <a href="https://hectorsblog.herokuapp.com/" target="_blank">View</a></h4>
+
+          <ul>
+
+            <li>
+              <p>Created a Full Stack dynamic Blog website following MVC design pattern.With security login features
+                for multiple users. Allows admin user to manage other contributers blog posts.
+                Users are able to add, edit delete, and create a blog post.
+
+              </p>
+            </li>
+            <li>
+              <p><i>Technologies Used: Java, Thyme Leaf, MySQL, JavaScript, TinyMCE, HTML, CSS, Bootstrap, Spring MVC,
+                  Heroku, Tomcat and Spring Depenency Injection</i></p>
+            </li>
+          </ul>
+          <button class="screenshotsbtn">View Screenshots</button>
+
+        </section>
+      </div>
+
+
+
+      <br>
+      <br>
+
+      <!-- PROJECT 2 -->
+      <div class="row ">
+
+        <div class="col-md-6">
+          <!--Carousel Wrapper-->
+          <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+            <!--Indicators-->
+
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active">
+
+                <div class="view">
+                  <img class="d-block w-100" src="images/project.png" alt="First slide">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">XCODE IDE</h3>
+                  <p>manage all users blog posts</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                  <img class="d-block w-100" src="images/iosproject.png" alt="Second slide">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">XCODE IDE</h3>
+                  <p>early stage of developement</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                  <img class="d-block w-100" src="images/project3.png" alt="Third slide">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">Feed page</h3>
+                  <p>view current blog posts</p>
+                </div>
+              </div>
             </div>
-            <div class="carousel-caption">
-              <h3 class="h3-responsive">Feed page</h3>
-              <p>view current blog posts</p>
-            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+
+            <!--/.Controls-->
           </div>
         </div>
-        <!--/.Slides-->
-        <!--Controls-->
 
-        <!--/.Controls-->
-      </div>
-      <!--/.Carousel Wrapper-->
-    </div>
+        <div class="col-md-6">
 
-  </div>
+          <h4>SWIFT IOS - Task management App</h4>
 
+          <ul>
 
-
-  <br>
-  <br>
-
-  <!-- PROJECT 2 -->
-  <div class="row ">
-
-    <div class="col-md-6">
-      <!--Carousel Wrapper-->
-      <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
-        <!--Indicators-->
-
-        <!--/.Indicators-->
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-item active">
-
-            <div class="view">
-              <img class="d-block w-100" src="images/project.png" alt="First slide">
-              <div class="mask rgba-black-light"></div>
-            </div>
-
-            <div class="carousel-caption">
-              <h3 class="h3-responsive">XCODE IDE</h3>
-              <p>manage all users blog posts</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view">
-              <img class="d-block w-100" src="images/iosproject.png" alt="Second slide">
-              <div class="mask rgba-black-light"></div>
-            </div>
-            <div class="carousel-caption">
-              <h3 class="h3-responsive">XCODE IDE</h3>
-              <p>early stage of developement</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view">
-              <img class="d-block w-100" src="images/project3.png" alt="Third slide">
-              <div class="mask rgba-black-light"></div>
-            </div>
-            <div class="carousel-caption">
-              <h3 class="h3-responsive">Feed page</h3>
-              <p>view current blog posts</p>
-            </div>
-          </div>
+            <li>
+              <p>Currently working on a Full CRUD based ios application using the MVC design pattern. Allowes for
+                multiple user accounts. The purpose of the program is to alow users todo
+                manage personal tasks.
+              </p>
+            </li>
+            <li>
+              <p><i>Technologies Used: SWIFT, Core Data, Realm Database</i></p>
+            </li>
+          </ul>
+          <button class="screenshotsbtn">View Screenshots</button>
         </div>
-        <!--/.Slides-->
-        <!--Controls-->
-
-        <!--/.Controls-->
       </div>
     </div>
 
-    <div class="col-md-6">
-
-      <h4>SWIFT IOS - Task management App</h4>
-
-      <ul>
-
-        <li>
-          <p>Currently working on a Full CRUD based ios application using the MVC design pattern. Allowes for
-            multiple user accounts. The purpose of the program is to alow users todo
-            manage personal tasks.
-          </p>
-        </li>
-        <li>
-          <p><i>Technologies Used: SWIFT, Core Data, Realm Database</i></p>
-        </li>
-      </ul>
-      <button class="screenshotsbtn">View Screenshots</button>
-    </div>
-
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12 footer">
-
-      <div class="socialmedia sm">
-        <img class="medilinks" src="landingPageImages/linkedin.png">
-        <img class="medilinks" src="landingPageImages/github.png">
+    <div class="row">
+      <div class="col-lg-12 footer">
+        <div class="socialmedia sm">
+          <a href="https://linkedin.com/in/stephen-espinal-17a825181/" target="_blank"><img class="medilinks"
+              src="landingPageImages/linkedin.png"></a>
+          <a href="https://github.com/stephenespinal22" target="_blank"><img class="medilinks"
+              src="landingPageImages/github.png"></a>
+        </div>
+        <footer class="text-center">
+          <p>&copy; 2019 Stephen Espinal</p>
+        </footer>
       </div>
-
-      <footer class="text-center">
-        <p>&copy; 2019 Stephen Espinal</p>
-      </footer>
     </div>
-  </div>
 
-</div>
+  </div>
 
 
 
