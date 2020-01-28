@@ -124,7 +124,7 @@ li:hover .fa {
   margin: 0px;
 }
 
-.downloadbtn:hover {
+.canhover .downloadbtn:hover {
   color: white;
   text-decoration: none;
   background: #4f4f4f;
