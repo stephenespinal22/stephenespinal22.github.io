@@ -79,7 +79,7 @@ li:hover .fa {
 
 .indent {
   padding-left: 10%;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .back-ground {
@@ -325,7 +325,6 @@ li:hover .fa {
   display: inline-block;
   padding: 3px;
   cursor: pointer;
-  float: right;
 }
 
 .optionLinks a {
@@ -451,7 +450,7 @@ li:hover .fa {
 
 /* media query for phone */
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 500px) {
   .header {
     height: 50px;
     background-color: transparent;
