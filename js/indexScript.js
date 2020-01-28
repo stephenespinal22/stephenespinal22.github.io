@@ -10,7 +10,10 @@ $(document).ready(function () {
     }
 
     $(document).on("click", "#project-info", toggleNav);
-
+    var canHover = !(matchMedia('(hover: none)').matches);
+    if (canHover) {
+      document.body.classList.add('can-hover');
+    }
 });
 
 

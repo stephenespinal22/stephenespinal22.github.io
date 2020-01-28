@@ -175,7 +175,7 @@ li:hover .fa {
   margin-top: 20px;
 }
 
-.viewMore:hover {
+.can-hover .viewMore:hover {
   color: white;
   text-decoration: none;
   background: #4f4f4f;
@@ -196,7 +196,7 @@ li:hover .fa {
   border-radius: 20px;
 }
 
-.visit:hover {
+.can-hover .visit:hover {
   color: white;
   text-decoration: none;
   background: #723d3d;
