@@ -185,7 +185,7 @@ li:hover .fa {
 #top {
   background-image: url(../landingPageImages/background.jpg);
   background-color: rgb(28, 29, 37);
-  overflow: hidden;
+  overflow-x: hidden;
   transition: all .3s ease;
   height: 100vh;
 }
@@ -325,6 +325,7 @@ li:hover .fa {
   display: inline-block;
   padding: 3px;
   cursor: pointer;
+  float: right;
 }
 
 .optionLinks a {
@@ -370,7 +371,7 @@ li:hover .fa {
   opacity: 1;
 }
 
-/* Hambrger nav */
+/* Hamburger nav */
 
 .hamcontainer {
   box-sizing: border-box;
