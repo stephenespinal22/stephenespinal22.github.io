@@ -1,7 +1,7 @@
 body {
     font-family: 'Helvetica Neue';
     background-color: whitesmoke;
-  }
+}
 
 section {
     max-width: 1100px;
@@ -9,53 +9,54 @@ section {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 10px;
-
 }
 
-.caption{
+.caption {
     font-size: 13px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.phone-size-container
-{
+.phone-size-container {
     text-align: center;
 }
-.phone-size
-{
-width: 400px;
+
+.phone-size {
+    width: 500px;
 }
 
-.medium-size
-{
-width: 700px;
+.medium-size {
+    width: 700px;
 }
 
-.medium2-size
-{
-width: 700px;
+.medium2-size {
+    width: 700px;
 }
 
 @media screen and (max-width: 1300px) {
-    .medium-size
-    {
-    width: 400px;
+    .medium-size {
+        width: 700px;
     }
-    .medium2-size
-    {
-    width: 700px;
+    .medium2-size {
+        width: 700px;
+    }
+    .phone-size {
+        width: 500px;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .medium2-size
-    {
-    width: 400px;
+    .medium2-size {
+        width: 300px;
+    }
+    .medium-size {
+        width: 300px;
+    }
+    .phone-size {
+        width: 300px;
     }
 }
-
 
 /* img:hover {
     -webkit-transform: scale(1.2);
