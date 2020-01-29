@@ -8,7 +8,7 @@ Most recent revision: 4/4/2019
 <html lang="en">
 
 <head>
-    <title>Stephen's Portfolio</title>
+    <title>SuperTracker Info</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -16,23 +16,160 @@ Most recent revision: 4/4/2019
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/landingPage.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="../css/info.css">
 </head>
 
 <body>
-    
-    <p>● Allows users to mark sighting coordinates on a map using a map API</p>
-    <p>● Used API documentation to build map functions with JavaScript, linking it to
-        the HTML with Thymeleaf and Spring Java Controller</p>
-    <p>● Allows users to create, view, edit, and delete Sightings, Characters, Locations
-        (using reverse GeoCoding), Organizations, and Powers</p>
-    <p>● Technologies Used: Java, Spring Boot, JDBC Template, MySQL, Thymeleaf,
-        Leaflet, JavaScript</p>
+    <div class="container-fluid">
+        <h1>Project: 'SuperTracker' </h1>
+        <h2>Documentation/Info</h2>
+        <section>
+
+            <p>● Technologies Used: Java, Spring Boot, JDBC Template, MySQL, Thymeleaf,
+                Leaflet, JavaScript, CSS/Bootstrap</p>
+
+            <a href="#bottom">source code link at the end</a>
+            <img class="d-block w-100" src="../landingPageImages/tracker1.png" alt="First slide">
+            <div class="caption"><em>Home Page with map of recent sightings. This page will display the 10 most recent
+                    sightings</em></div>
+
+            <p>This project is a multi-page dynamic Spring Boot Full Stack Web Application using
+                the MVC design pattern and incorporating a MySQL database. For the front-end I used Thymeleaf which
+                is a modern server-side Java template engine.
+                This allows us to build HTML pages and put some logic in the HTML so we can conditionally render
+                pieces of the page or render lists.It allows users to create, read/view, update, and delete (CRUD) on 5
+                objects. These objects are Sightings, Characters, Locations
+                (using reverse GeoCoding), Organizations, and Powers</p>
+            <p>It's an application I made as a project for my coding bootcamp. For this project, I was made project
+                manager, where I directed and oversaw
+                2 group members throughout the entire application, supplying shells/ layouts for all classes and
+                wireframes for the front-end, all in addition to
+                coding/debugging most of the project. We constantly pushed work through github where I helped with minor
+                merge conflicts. We also frequently met
+                through video calls like google hangouts, where we could share our screen and work out issues together.
+            </p>
+
+            <p>The main feature of this application is the ability to keep track of 'super-heroes' and their sightings.
+                It's a playful
+                concept that obviously wouldn't have a use in the real world, but swap the nouns and the concept is
+                resusable.
+                The app allows users to mark sighting location coordinates on a map using a map API, keep track of which
+                organizations a 'Super' is a part of, and their super powers. All data is retained using a MySQL
+                database
+                for data persistance.
+            </p>
+
+            <img class="d-block w-100" src="../landingPageImages/tracker7.png" alt="First slide">
+            <div class="caption"><em>This is the sightings screen, here you can create update and delete sightings</em>
+            </div>
+
+            <p>One of the key features is seeing all the sightings of a 'Super'. Here you can add a sighting by using
+                the form on the right.
+                You can choose the location and the date/time they were spotted.
+            </p>
+
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="w-100" src="../landingPageImages/tracker9.png">
+                    </div>
+                    <div class="col-6">
+                        <img class="w-100" src="../landingPageImages/tracker8.png">
+                    </div>
+                </div>
+            </div>
+            <div class="caption"><em>This is the 'Supers' screen, here you can create update and delete 'Supers'</em>
+            </div>
+
+            <p>Another one of the key features is managing all the 'Supers'. Here you can add a 'Super' by using the
+                form on the right.
+                You can choose the super's powers and organizations from a list. A 'Super' object is made up of:
+            </p>
+            <ul>
+                <u><strong>Super Object Class Structure</strong></u>
+                <li>Id</li>
+                <li>Name</li>
+                <li>Description</li>
+                <li>Image Path</li>
+                <li>isVillain (Y/N)</li>
+                <li>List Of: Powers</li>
+                <li>List Of: Organizations</li>
+            </ul>
+            <p>Supers have Powers and are a part of Organizations. These are other objects that
+                both have a many to many relationship with Supers.</p>
+
+            <div class="phone-size-container">
+                <img class="phone-size" src="../landingPageImages/tracker10.gif" alt="First slide">
+            </div>
+            <div class="caption"><em>The layout is also responsive, so heres what it looks like on a phone</em>
+            </div>
+
+            <p>When on a smaller screen, the table that holds the supers, is modified for better use on a smaller screen. The nav bar also changes to a different 
+                layout as a neat bonus. This was done using CSS media queries on different page sizes.
+                You'll also notice there are images tied to supers. This was accomplished using the dropbox API to
+                upload images directly to a dropbox
+                account that I set up
+                for this site. It's pretty cool using this as a free way to store images. This wouldn't cut it in a real
+                world application,
+                but I found it to be resourceful.</p>
+            <p>
+                The app also allows users to update Powers and Organizations in a similar way to the other objects on
+                their own pages as shown below.</p>
 
 
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="w-100" src="../landingPageImages/tracker11.png">
+                    </div>
+                    <div class="col-6">
+                        <img class="w-100" src="../landingPageImages/tracker12.png">
+                    </div>
+                </div>
+            </div>
+            <div class="caption"><em>The organizations and powers pages</em></div>
 
+            <p>These (CRUD) screens use Data Tables as a cool framework with Bootstrap that allows for pagination of
+                tables. It also allows
+                for a very developer-friendly search feature. Now for the last object, Locations.
+            </p>
 
+            <div class="phone-size-container">
+                <img class="medium2-size" src="../landingPageImages/tracker13.gif" alt="First slide">
+            </div>
+            <div class="caption"><em>This is the add location screen, here you can click on areas of the map to reverse
+                    geocode an address that will auto-populate in the forms fields</em>
+            </div>
+
+            <p>This was pretty cool to read up on how to do. I reseached for map API's and came across
+                Leaflet/OpenStreetMap. I added the necessary CDN's to my HTML and was ready to figure it out.
+                The documentation/framework helped me write some JavaScript that was able to create a map object and
+                allow for clicks to return back an address and coordinates. I manipulated this data to populate in my
+                form which
+                seemed like a cool thing.
+            </p>
+
+            <p>Using the same API I was able to work out the markers for the sightings on the map. When the map for
+                sightings is open
+                there is a loop that runs through the most recent 20 sightings grabbing their coordinates and placing a
+                marker on each location.
+                If two sightings are in the same location, a spiderfier I found will create a branch of markers
+                displaying more than one at a location.
+            </p>
+
+            <img id="bottom" class="d-block w-100" src="../landingPageImages/tracker14.gif" alt="First slide">
+            <div class="caption"><em>Example of the markers showing super's sightings</em></div>
+
+            <p>There was alot more that went into building this project, you can check out the <u> source code</u><a
+                    href="https://github.com/stephenespinal22/M9SuperHeroSJC" target="_blank"> here</a>.
+                This links to an earlier build before I added dropbox functionality (final product repo must remain private due
+                to API key) and before I added extra CSS to
+                create the responsive tables. You can also see the DDL for the database and the ERD.
+                If you would like to test out the application, visit it <a href="https://sedev-supertracker.herokuapp.com"
+                    target="_blank">here</a>.</p>
+
+        </section>
+    </div>
     <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

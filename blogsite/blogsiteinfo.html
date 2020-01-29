@@ -8,7 +8,7 @@ Most recent revision: 4/4/2019
 <html lang="en">
 
 <head>
-    <title>Stephen's Portfolio</title>
+    <title>BlogSite Info</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -16,23 +16,175 @@ Most recent revision: 4/4/2019
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/landingPage.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="../css/info.css">
 </head>
 
 <body>
+    <div class="container-fluid">
+        <h1>Project: 'BlogPosts' </h1>
+        <h2>Documentation/Info</h2>
+        <section>
+            <p>● Technologies Used: Java, Spring Boot, JDBC Template, MySQL, Thymeleaf,
+                JavaScript, Spring Security</p>
+            <a href="#bottom">source code link at the end</a>
+            <img class="d-block w-100" src="../landingPageImages/blog1.png" alt="First slide">
+            <div class="caption"><em>Home Page with admin side-bar active. This page will display the 4 most recent
+                    posts</em></div>
 
+            <p>This project is a multi-page dynamic Spring Boot Full Stack Web Application using
+                the MVC design pattern and incorporating a MySQL database and Spring Security. For the front-end I used
+                Thymeleaf which
+                is a
+                modern server-side Java template engine.
+                This allows us to build HTML pages and put some logic in the HTML so we can conditionally render
+                pieces of
+                the page or render lists.
+                It's an application I made as a project for my coding bootcamp.
+                It allows users to create, read/view, update, and delete (CRUD) blog posts.</p>
 
-    <p>● Created a multi-page dynamic Spring Boot Full Stack Web Application using
-        the MVC design pattern and incorporating a MySQL database</p>
-    <p>● Allows users to create, view, edit, and delete blog posts</p>
-    <p>● Blog Posts are able to be organized by category and hashtag</p>
-    <p>● Allows users to have different roles with security that hides website
-        functionality based on role</p>
-    <p>● Technologies Used: Java, Spring Boot, JDBC Template, MySQL, Thymeleaf,
-        JavaScript, Spring Security</p>
+            <img class="d-block w-100" src="../landingPageImages/blog4.png" alt="First slide">
+            <div class="caption"><em>This is the main content screen anyone can visit to see all posts</em></div>
 
+            <p>The posts are displayed as these "cards" that have the basic properties that
+                make up the Post object. A post is made up of:
+            </p>
 
+            <ul>
+                <u><strong>Post Object Class Structure</strong></u>
+                <li>Id</li>
+                <li>Title</li>
+                <li>Preview Text</li>
+                <li>Date</li>
+                <li>Content</li>
+                <li>isPublished (Y/N)</li>
+                <li>Featured Image Path</li>
+                <li>User/Author</li>
+                <li>List Of: Categories</li>
+                <li>List Of: Hash Tags</li>
+            </ul>
+            <p>Posts have categories and hashtags. These are other objects that
+                both have a many to many relationship with Posts.</p>
+            <p>Below, I added some comments to this image to show how each property is displayed</p>
+
+            <div class="phone-size-container">
+                <img class="medium-size" src="../landingPageImages/blog6.png" alt="First slide">
+            </div>
+            <div class="caption"><em>The layout is also responsive, so heres what it looks like on a phone</em>
+            </div>
+
+            <p>The app also allows users to have different roles with security that hides website
+                functionality based on role. This was achieved using Spring Security. These roles are Admin and
+                Contributer.
+                So this means that anyone who doesn't have log-in information can only view Home and Content.</p>
+            <p>Once a user logs in, They gain more functionality such as they above mentioned (CRUD) for posts. Let's
+                log in as a contributer</p>
+
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="w-100" src="../landingPageImages/bloggif1.gif">
+                    </div>
+                    <div class="col-6">
+                        <img class="w-100" src="../landingPageImages/bloggif2.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="caption"><em>Log-in using the side-bar button and you can view/manage all posts you have
+                    made</em></div>
+
+            <p>The table in the right gif was made to be responsive. Here's what it looks like on a phone or smaller
+                screen. This was done using CSS media queries on different page sizes.</p>
+
+            <div class="phone-size-container">
+                <img id="responsive" class="medium-size" src="../landingPageImages/bloggif3.gif" alt="First slide">
+            </div>
+            <div class="caption"><em>The table is responsive, so heres what it looks like on a phone</em>
+            </div>
+            <p>The side-bar has allowed access to new features. A button to create posts, and another to manage them</p>
+
+            <img class="d-block w-100" src="../landingPageImages/bloggif4.gif" alt="First slide">
+            <div class="caption"><em>Here, a user can create a new post and upload an image with the post using this
+                    form</em></div>
+
+            <p>The Post content input area uses TinyMCE which is a great text editor that can be used for writing up a
+                post.</p> Here the user finds access to
+            choose which pre-determined category the post falls under (these are admin only in terms creating or
+            managing, as by design). The user can create and add hash tags within
+            the TinyMCE content area. Simply type in a '#' followed by a series of words, no spaces to automaticall
+            create a new hash tag
+            in the database. Ex. "#thisisahashtag". If the hash tag already exists, the program does not create a new
+            one, but still adds it to the post.
+            Using the search function in content or when mananing posts, you can search by hash tag and all posts with
+            that hash tag should show up. This was accomplished by a Regex expression that is used to match any strings
+            with that pattern and when
+            a match is found, it adds it to the database.</p>
+
+            <p>You'll also notice there are images on the site, with the
+                user's and
+                with the posts. This was accomplished using the dropbox API to upload images directly to a dropbox
+                account that I set up
+                for this site. It's pretty cool using this as a free way to store images. This wouldn't cut it in a real
+                world application,
+                but I found it to be resourceful. </p>
+            <p> Now although any contributer can create a post, and view/manage their own posts, the post will not go
+                'live' unless approved by an admin.
+                The property 'isPublished' will not be set to true unless an admin goes in and approves it. Let's move
+                onto admins.
+            </p>
+
+            <div class="phone-size-container">
+                <img class="phone-size" src="../landingPageImages/blog7.png" alt="First slide">
+            </div>
+            <div class="caption"><em>A closer look at the full access features</em>
+            </div>
+
+            <p>Admin's have total access to everything a contributer can do in addition to, edit and create users, give
+                user's roles, approve posts, manage all published posts, manage
+                categories and hashtags. An admin will recieve a numbered badge with the number of posts waiting to
+                be approved, 3 posts are waiting to be approved in this image.</p>
+
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-4">
+                        <img class="w-100" src="../landingPageImages/blog8.png">
+                    </div>
+                    <div class="col-4">
+                        <img class="w-100" src="../landingPageImages/blog9.png">
+                    </div>
+                    <div class="col-4">
+                        <img class="w-100" src="../landingPageImages/blog10.png">
+                    </div>
+                </div>
+            </div>
+            <div class="caption"><em>Here's some photos of the admin's main features. These are also responsive similar
+                    to the manage posts view shown <a href="#responsive">above</a></em></div>
+
+            <p>Admin's will be able to check off on a users post by clicking the green check marked, 'Approve'. They can
+                also view all published posts and edit them on the fly without removing the post from the main feed of
+                already published posts.
+            </p>
+
+            <img id="bottom" class="d-block w-100" src="../landingPageImages/blog11.png" alt="First slide">
+            <div class="caption"><em>What a post looks like... Plus comments</em></div>
+
+            <p> User's can view the post in it's own page that can be linked. Also if you are logged in, you can add
+                comments to a post. Contributer's can only delete their own
+                comments and an admin can delete any comment.
+            </p>
+
+            <p>There was alot more that went into building this project, you can check out the <u> source code</u><a
+                    href="https://github.com/stephenespinal22/SoftwareGuildWork/tree/master/Classwork/M9/Mastery"
+                    target="_blank"> here</a>.
+                This links to an earlier build before I added dropbox functionality (final repo must remain private due
+                to API key) and before I added extra CSS to
+                create the responsive tables. You can also see the DDL for the database, the ERD, and the project's UML.
+                If you would like to test out the application, visit it <a href="https://sedev-blogsite.herokuapp.com"
+                    target="_blank">here</a>. Since you took out the time
+                to read this, you can try out the contributer features by using the login Jim Halpert and the password
+                is password.</p>
+
+        </section>
+    </div>
     <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

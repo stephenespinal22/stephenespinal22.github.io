@@ -14,6 +14,8 @@ $(document).ready(function () {
     if (canHover) {
       document.body.classList.add('can-hover');
     }
+
+    
 });
 
 
